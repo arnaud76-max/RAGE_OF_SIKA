@@ -19,6 +19,7 @@ export default class Game extends Phaser.Scene
 	}
 	preload()
 	{
+		this.load.image('background', 'assets/background.png')
 		   //assets moto
 		   this.load.image('motoBlue','kenney_racingpack_updated/PNG/Motorcycles/motorcycle_black.png')
 		   this.load.image('motoGreen','kenney_racingpack_updated/PNG/Motorcycles/motorcycle_green.png')
@@ -40,6 +41,7 @@ export default class Game extends Phaser.Scene
 
 	create()
 	{
+		this.add.image(240,320, 'background')
 		this.add.image(420,670,'motoBlue')
         this.add.image(320,620,'motoGreen')
         this.add.image(620,650,'motoBlack')
